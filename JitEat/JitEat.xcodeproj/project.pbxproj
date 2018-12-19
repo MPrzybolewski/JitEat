@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D996FF521CAC56900C8046C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D996FF421CAC56900C8046C /* AppDelegate.swift */; };
-		4D996FF721CAC56900C8046C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D996FF621CAC56900C8046C /* ViewController.swift */; };
+		4D996FF721CAC56900C8046C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D996FF621CAC56900C8046C /* HomeViewController.swift */; };
 		4D996FFA21CAC56900C8046C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FF821CAC56900C8046C /* Main.storyboard */; };
 		4D996FFC21CAC56A00C8046C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FFB21CAC56A00C8046C /* Assets.xcassets */; };
 		4D996FFF21CAC56A00C8046C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FFD21CAC56A00C8046C /* LaunchScreen.storyboard */; };
+		4DE3692821CACC5700DB5785 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE3692721CACC5700DB5785 /* LoginViewController.swift */; };
 		7257E95766015EC4BE838A44 /* Pods_JitEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F211EDB650687BDE502E7124 /* Pods_JitEat.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,11 +20,12 @@
 		0EB7D09E37547AB4CD87F0BC /* Pods-JitEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JitEat/Pods-JitEat.release.xcconfig"; sourceTree = "<group>"; };
 		4D996FF121CAC56900C8046C /* JitEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JitEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D996FF421CAC56900C8046C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4D996FF621CAC56900C8046C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4D996FF621CAC56900C8046C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4D996FF921CAC56900C8046C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D996FFB21CAC56A00C8046C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D996FFE21CAC56A00C8046C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D99700021CAC56A00C8046C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE3692721CACC5700DB5785 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5E4F2A04DB2213091C13B7E8 /* Pods-JitEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JitEat/Pods-JitEat.debug.xcconfig"; sourceTree = "<group>"; };
 		F211EDB650687BDE502E7124 /* Pods_JitEat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JitEat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,14 +63,23 @@
 		4D996FF321CAC56900C8046C /* JitEat */ = {
 			isa = PBXGroup;
 			children = (
+				4DE3692621CACC2200DB5785 /* ViewControllers */,
 				4D996FF421CAC56900C8046C /* AppDelegate.swift */,
-				4D996FF621CAC56900C8046C /* ViewController.swift */,
 				4D996FF821CAC56900C8046C /* Main.storyboard */,
 				4D996FFB21CAC56A00C8046C /* Assets.xcassets */,
 				4D996FFD21CAC56A00C8046C /* LaunchScreen.storyboard */,
 				4D99700021CAC56A00C8046C /* Info.plist */,
 			);
 			path = JitEat;
+			sourceTree = "<group>";
+		};
+		4DE3692621CACC2200DB5785 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4D996FF621CAC56900C8046C /* HomeViewController.swift */,
+				4DE3692721CACC5700DB5785 /* LoginViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		792164D0A67798F65120B984 /* Pods */ = {
@@ -220,7 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D996FF721CAC56900C8046C /* ViewController.swift in Sources */,
+				4DE3692821CACC5700DB5785 /* LoginViewController.swift in Sources */,
+				4D996FF721CAC56900C8046C /* HomeViewController.swift in Sources */,
 				4D996FF521CAC56900C8046C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
