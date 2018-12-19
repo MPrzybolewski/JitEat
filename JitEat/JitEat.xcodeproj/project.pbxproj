@@ -12,9 +12,11 @@
 		4D996FFA21CAC56900C8046C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FF821CAC56900C8046C /* Main.storyboard */; };
 		4D996FFC21CAC56A00C8046C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FFB21CAC56A00C8046C /* Assets.xcassets */; };
 		4D996FFF21CAC56A00C8046C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D996FFD21CAC56A00C8046C /* LaunchScreen.storyboard */; };
+		7257E95766015EC4BE838A44 /* Pods_JitEat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F211EDB650687BDE502E7124 /* Pods_JitEat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EB7D09E37547AB4CD87F0BC /* Pods-JitEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JitEat/Pods-JitEat.release.xcconfig"; sourceTree = "<group>"; };
 		4D996FF121CAC56900C8046C /* JitEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JitEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D996FF421CAC56900C8046C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D996FF621CAC56900C8046C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4D996FFB21CAC56A00C8046C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D996FFE21CAC56A00C8046C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D99700021CAC56A00C8046C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E4F2A04DB2213091C13B7E8 /* Pods-JitEat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitEat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JitEat/Pods-JitEat.debug.xcconfig"; sourceTree = "<group>"; };
+		F211EDB650687BDE502E7124 /* Pods_JitEat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JitEat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7257E95766015EC4BE838A44 /* Pods_JitEat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				4D996FF321CAC56900C8046C /* JitEat */,
 				4D996FF221CAC56900C8046C /* Products */,
+				792164D0A67798F65120B984 /* Pods */,
+				D3C6D1A73F0179CCCDA87820 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = JitEat;
 			sourceTree = "<group>";
 		};
+		792164D0A67798F65120B984 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E4F2A04DB2213091C13B7E8 /* Pods-JitEat.debug.xcconfig */,
+				0EB7D09E37547AB4CD87F0BC /* Pods-JitEat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D3C6D1A73F0179CCCDA87820 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F211EDB650687BDE502E7124 /* Pods_JitEat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D99700321CAC56A00C8046C /* Build configuration list for PBXNativeTarget "JitEat" */;
 			buildPhases = (
+				24D54C48152703B568D5BB26 /* [CP] Check Pods Manifest.lock */,
 				4D996FED21CAC56900C8046C /* Sources */,
 				4D996FEE21CAC56900C8046C /* Frameworks */,
 				4D996FEF21CAC56900C8046C /* Resources */,
+				2FCC723CF0E2A9A13DED5EFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D54C48152703B568D5BB26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JitEat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FCC723CF0E2A9A13DED5EFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JitEat/Pods-JitEat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JitEat/Pods-JitEat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4D996FED21CAC56900C8046C /* Sources */ = {
@@ -280,6 +365,7 @@
 		};
 		4D99700421CAC56A00C8046C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E4F2A04DB2213091C13B7E8 /* Pods-JitEat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +384,7 @@
 		};
 		4D99700521CAC56A00C8046C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB7D09E37547AB4CD87F0BC /* Pods-JitEat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
