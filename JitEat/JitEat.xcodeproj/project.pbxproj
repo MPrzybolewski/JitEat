@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D06569B21CAEEE000CBFCD9 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D06569A21CAEEE000CBFCD9 /* Button.swift */; };
 		4D1A30AA21CADA3900754669 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A30A921CADA3900754669 /* Constants.swift */; };
 		4D1A30AC21CADAAE00754669 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A30AB21CADAAE00754669 /* ApiRouter.swift */; };
 		4D1A30AF21CADC7D00754669 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1A30AE21CADC7D00754669 /* Post.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		0EB7D09E37547AB4CD87F0BC /* Pods-JitEat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JitEat.release.xcconfig"; path = "Pods/Target Support Files/Pods-JitEat/Pods-JitEat.release.xcconfig"; sourceTree = "<group>"; };
+		4D06569A21CAEEE000CBFCD9 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4D1A30A921CADA3900754669 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4D1A30AB21CADAAE00754669 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
 		4D1A30AE21CADC7D00754669 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D06569921CAEED200CBFCD9 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4D06569A21CAEEE000CBFCD9 /* Button.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
 		4D1A30AD21CADC6600754669 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		4D996FF321CAC56900C8046C /* JitEat */ = {
 			isa = PBXGroup;
 			children = (
+				4D06569921CAEED200CBFCD9 /* Styles */,
 				4D1A30B421CAE00E00754669 /* Api */,
 				4D1A30AD21CADC6600754669 /* Models */,
 				4DE3692621CACC2200DB5785 /* ViewControllers */,
@@ -228,6 +239,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-JitEat/Pods-JitEat-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -237,6 +254,12 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -256,6 +279,7 @@
 				4DE3692821CACC5700DB5785 /* LoginViewController.swift in Sources */,
 				4D996FF721CAC56900C8046C /* HomeViewController.swift in Sources */,
 				4D1A30AC21CADAAE00754669 /* ApiRouter.swift in Sources */,
+				4D06569B21CAEEE000CBFCD9 /* Button.swift in Sources */,
 				4D1A30B321CADCE300754669 /* ApiClient.swift in Sources */,
 				4D1A30AF21CADC7D00754669 /* Post.swift in Sources */,
 				4D996FF521CAC56900C8046C /* AppDelegate.swift in Sources */,

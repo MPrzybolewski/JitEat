@@ -37,9 +37,7 @@ enum ApiRouter: URLRequestConvertible {
             }
         }()
         
-        let test = try encoding.encode(urlRequest, with: parameters)
-        
-        return test
+        return try encoding.encode(urlRequest, with: parameters)
     }
     
     //MARK: - HttpMethod

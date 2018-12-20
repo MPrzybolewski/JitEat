@@ -8,16 +8,30 @@
 
 import UIKit
 import RxSwift
+import MaterialComponents
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var SignalButton: MDCButton!
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        SignalButton.accessibilityLabel = Constants.signalButtonText
     }
-
-    @IBAction func SignalButton(_ sender: Any) {
+    
+    override func loadView() {
+        super.loadView()
+        
+        SignalButton.setTitle(Constants.signalButtonText, for: .normal)
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    @IBAction func SignalButtonClicked(_ sender: Any) {
         ApiClient.getPosts(userId: 1)
             .observeOn(MainScheduler.instance)
             .subscribe(onNext: { postsList in

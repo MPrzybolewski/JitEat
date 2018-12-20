@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,33 +15,58 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="JitEat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ija-cT-o8b">
-                                <rect key="frame" x="87.5" y="318.5" width="200" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="pRB-L4-HjX" userLabel="LogoImage">
+                                <rect key="frame" x="107.5" y="70" width="105" height="105"/>
+                                <color key="tintColor" red="0.10826873034238815" green="0.09805973619222641" blue="0.097949765622615814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="rft-Mf-kNS"/>
+                                    <constraint firstAttribute="width" secondItem="pRB-L4-HjX" secondAttribute="height" multiplier="1:1" id="rgd-OK-AY9"/>
                                 </constraints>
-                                <state key="normal" title="Powiedz nam, że jesteś!">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="tIq-zO-KcU" userLabel="SignalButton" customClass="Button" customModule="JitEat" customModuleProvider="target">
+                                <rect key="frame" x="137" y="225" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="N6q-D3-4kb"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.numberOfLines">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="SignalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wum-Re-D1g"/>
+                                    <action selector="SignalButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fOR-Cc-q1N"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.10826873034238815" green="0.09805973619222641" blue="0.097949765622615814" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="ija-cT-o8b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RXx-ak-k7v"/>
-                            <constraint firstItem="ija-cT-o8b" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eG6-pL-xc9"/>
+                            <constraint firstItem="tIq-zO-KcU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0lV-LJ-kNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tIq-zO-KcU" secondAttribute="trailing" constant="20" id="2kc-hN-NM9"/>
+                            <constraint firstItem="tIq-zO-KcU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="DXv-10-WOl"/>
+                            <constraint firstItem="pRB-L4-HjX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="U5K-6L-87r"/>
+                            <constraint firstItem="tIq-zO-KcU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="juf-Um-cF1"/>
+                            <constraint firstItem="tIq-zO-KcU" firstAttribute="top" secondItem="pRB-L4-HjX" secondAttribute="bottom" constant="50" id="k6s-Oi-Ht0"/>
+                            <constraint firstItem="pRB-L4-HjX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="kdB-8Y-MCK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="SignalButton" destination="tIq-zO-KcU" id="FnZ-SD-zeq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="LogoImage" width="60" height="60"/>
+    </resources>
 </document>
